@@ -8,6 +8,7 @@ html{
     font-family: monospace;
     background-color: rgb(39, 38, 38);
     color: white;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
