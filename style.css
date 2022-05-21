@@ -3,12 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{
+*::-webkit-scrollbar{
+    width: 0px;
+}
+
+.main{
     font-size: 15px;
     font-family: monospace;
     background-color: rgb(39, 38, 38);
     color: white;
     scroll-behavior: smooth;
+}
+.main.white{
+    background-color: whitesmoke;
+    color: rgb(29, 27, 27);
 }
 a{
     text-decoration: none;
@@ -20,7 +28,13 @@ a{
     justify-content: center;
     align-items: center;   
 }
-
+.main.white #header .header .navlist ul{
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+.main.white #header .header a{
+    color: black;
+}
 #header{
     position: fixed;
     z-index: 1000;
@@ -75,6 +89,12 @@ a{
     display: block;
     margin-bottom:10px ;
 }
+.main.white #header .header .navlist ul a{
+    color: black;
+}
+.light{
+    cursor: pointer;
+}
 #header .header .navlist ul a:hover{
     border-bottom: 3px solid crimson;
     transition: .1s ease;
@@ -112,6 +132,11 @@ a{
     transform: scale(.7);
     margin-left: 82vw;
     background-color: rgb(29, 27, 27) ;
+    cursor: pointer;
+}
+.main.white #header .burger{
+    background-color: transparent;
+    border: 4px solid crimson;
 }
 #header .burger .bar1{
     height: 3px;
@@ -119,6 +144,15 @@ a{
     position: relative;
     background-color: white;
     z-index: -1;
+}
+.main.white #header .burger .bar1{
+    background-color: crimson;
+}
+.main.white #header .burger .bar2{
+    background-color: crimson;
+}
+.main.white #header .burger .bar3{
+    background-color: crimson;
 }
 #header .burger .bar2{
     height: 3px;
@@ -139,7 +173,12 @@ a{
     transition: .3s ease;
 }
 
-
+.main.white #hero{
+    background-image: url(./images/99868.jpg);
+}
+.main.white #hero::after{
+    opacity: .2;
+}
 #hero{
     background-image: url(./images/38161.jpg);
     background-size: cover;
@@ -250,6 +289,9 @@ a{
     letter-spacing: 2px;
     text-align: center; 
 }
+.main.white .sectiontitle{
+    color: rgb(29, 27, 27);
+}
 #services .servicetop p{
     font-size: 14px;
     margin-top: 5px;
@@ -263,6 +305,9 @@ a{
     justify-content: center;
     flex-wrap: wrap;
 }
+#services .servicebottom .serviceitem p{
+    color: rgb(204, 197, 197);
+}
 #services .serviceitem{
     flex-basis: 80%;
     display: flex;
@@ -271,7 +316,7 @@ a{
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(./images/download.jfif);
+    background-image: url(./images/5529648.jpg);
     background-size: cover;
     margin: 10px 5%;
     color: white;
@@ -329,7 +374,7 @@ a{
     color: white;
 }
 #projects .project-info h1{
-    font-size: 4rem;
+    font-size: 2.5rem;
     width: 100%;
     font-weight: 500;
 }
@@ -340,7 +385,7 @@ a{
     margin-top: 10px;
 }
 #projects .project-info p{
-    color: white;
+    color: rgba(255, 255, 255, 0.842);
 }
 #projects .project-img {
     flex-basis: 50%;
@@ -358,7 +403,7 @@ a{
     height: 300px;
     width: 100%;
     background-color: black;
-    opacity: .7;
+    opacity: .1;
     border-radius: 0px 0px 10px 10px; 
 }
 #projects .project-item .project-img:hover {
@@ -395,21 +440,31 @@ a{
     padding: 10px 20px;
     font-size: 2rem;
 }
+.main.white #about .col-right .cta{
+    color: rgb(29, 27, 27);
+}
+.main.white #about .col-right .cta:hover{
+    color: whitesmoke;
+}
 #about .col-left .about-img{
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid rgb(39, 38, 38);
+    border: 10px solid whitesmoke;
+}
+.main.white #about .col-left .about-img{
+    border: 10px solid rgb(29, 27, 27);
 }
 #about .col-left .about-img::after{
     content: "";
     position: absolute;
     left: -33px;
-    top: 19px;
+    top: 35px;
     height: 98%;
     width: 98%;
-    border: 7px solid crimson;
-    z-index: -1;
+    border-left: 7px solid crimson;
+    border-bottom: 7px solid crimson;
+    z-index: 1;
 }
 #about .col-left .about-img img{
     width: 100%;
@@ -462,6 +517,9 @@ a{
     padding-top: 50px;
     border-radius: 45px 0px 0px 0px;
 }
+.main.white #footer .footer{
+    background-image: linear-gradient(150deg, rgb(126, 119, 119),whitesmoke);
+}
 #footer  .footer h2{
     color: white;
     font-weight: 500;
@@ -471,11 +529,17 @@ a{
     margin-bottom: 10px;
     text-align: center;
 }
+.main.white #footer .footer h2{
+    color: rgb(29, 27, 27);
+}
 #footer  .footer p{
     text-align: center;
     background-image: linear-gradient(25deg, black,rgb(71, 69, 69));
     margin-top: 10px;
     padding: 10px;
+}
+.main.white #footer .footer p{
+    background-image: linear-gradient(25deg, rgb(255, 238, 238),rgb(204, 197, 197));
 }
 #footer  .footer .social-item{
     width: 100%;
@@ -493,12 +557,18 @@ a{
     text-decoration: underline;
     transition: .3s ease;
 }
+.main.white #footer .footer .social-item a:hover{
+    color: rgb(29, 27, 27);
+}
 
 .brand{
     font-size: 2rem;
     text-transform: uppercase;
     color: white;
     text-align: center;
+}
+.main.white .brand{
+    color: rgb(29, 27, 27);
 }
 
 @keyframes text_reveal{
@@ -633,6 +703,12 @@ a{
         padding: 10px;
         margin: 10px 20px;
         box-shadow: 1px 1px 4px 0px black;
+    }
+    #services .servicebottom .serviceitem p{
+        color: rgba(255, 255, 255, 0.425);
+    }
+    #services .servicebottom .serviceitem p:hover{
+        color: whitesmoke;
     }
     #projects .projects .all-projects .project-item{
         flex-direction: row;
