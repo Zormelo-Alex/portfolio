@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *::-webkit-scrollbar{
     width: 0px;
@@ -12,7 +13,6 @@
     font-family: monospace;
     background-color: rgb(39, 38, 38);
     color: white;
-    scroll-behavior: smooth;
 }
 .main.white{
     background-color: whitesmoke;
