@@ -715,6 +715,9 @@ a{
         margin-bottom: 5px;
         box-shadow: 1px 1px 4px 0px black;
     }
+    #projects .projects .all-projects .project-item:nth-child(2n){
+        flex-direction: row-reverse;
+    }
     #projects .project-info{
         height: 250px;
     }
