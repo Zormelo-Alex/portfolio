@@ -224,7 +224,11 @@
 <script src="./app.js"></script>
 <script>
     var yinYang = document.querySelector(".yin-yang-container");
-    yinYang.style.display = "none";
+    function stop(){
+        yinYang.style.display = "none";
+    };
+    setInterval(stop,3000);
+    
 </script>
 </body>
 </html>
