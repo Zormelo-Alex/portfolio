@@ -123,7 +123,7 @@ a{
     background-color: rgba(22, 21, 21, 0.993);
     width: 100vw;
     height: 100vh;
-    left: 100%;
+    right: -100vw;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -131,10 +131,10 @@ a{
     align-items: center;
     z-index: 1;
     overflow-x: hidden ;
-    transition: .5s ease-in-out left;
+    transition: .5s ease-in-out;
 }
 #header .header .navlist ul.active{
-    left: 0;
+    right: 0;
     transition: .5s ease-in-out;
 }
 #header .header .navlist ul a{
@@ -158,17 +158,15 @@ a{
     border-bottom: 3px solid crimson;
     transition: .1s ease;
 }
-#header .burger.active .bar2{
+#header .burger.active .bar2, #header .burger.active .bar3{
     margin: 0;
     height: 1px;
-    transition: .3s ease;
+    transition: .5s ease;
+    transform: rotate(360deg);
     background-color: crimson;
 }
 #header .burger.active .bar3{
-    margin: 0;
-    height: 1px;
-    transition: .3s ease;
-    background-color: crimson;
+    transform: rotate(-360deg);
 }
 #header .burger.active .bar1{
     background-color: crimson;
@@ -724,16 +722,6 @@ a{
         border-radius: 0px 0px 0px 25px;
         background-color: rgba(26, 24, 24, 0.801);
         width: 100%;
-    }
-    #header .navbar .navlist ul.active{
-        display: flex;
-        flex-direction: row;
-        left: 0;
-        top: 0;
-        height: 40px;
-        box-shadow: none;
-        border-radius: 0px 0px 0px 25px;
-        background-color: rgba(26, 24, 24, 0.877);
     }
     #header .header .navlist ul a{
         font-size: 22px;
