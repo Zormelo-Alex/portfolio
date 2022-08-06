@@ -8,7 +8,7 @@ const header = document.querySelector('.header.container');
 const yinYang = document.querySelector(".yin-yang-container");
 
 //events
-setInterval(stop,2000);
+setInterval(stop,2500);
 
 burger.addEventListener('click',()=>{
     burger.classList.toggle('active');
@@ -36,5 +36,5 @@ function stop(){
 AOS.init({
     easing: 'ease',
     duration: 1800,
-    //once: true
+    once: true
 });
