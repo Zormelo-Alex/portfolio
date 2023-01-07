@@ -363,7 +363,8 @@ a{
     flex-wrap: wrap;
 }
 #services .servicebottom .serviceitem p{
-    color: rgb(204, 197, 197);
+    color: rgb(224, 216, 216);
+    margin-top: 1rem;
 }
 #services .serviceitem{
     flex-basis: 80%;
@@ -431,15 +432,15 @@ a{
     color: white;
 }
 #projects .project-info h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: 100%;
     font-weight: 500;
 }
 #projects .project-info h2{
-    font-size:1.8rem ;
+    font-size:1.5rem ;
     font-weight: 500;
     width: 100%;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 #projects .project-info p{
     color: rgba(255, 255, 255, 0.842);
@@ -493,7 +494,7 @@ a{
 }
 #about .col-right .cta{
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 10px 20px;
     font-size: 2rem;
 }
@@ -553,6 +554,12 @@ a{
     box-shadow: 0px 0px 5px 0 rgb(17, 17, 17);
     transition: .3s ease;
 }
+#contact .contact-item img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: top;
+}
 #contact .icon{
     width: 70px;
     margin-bottom: 10px;
@@ -580,7 +587,7 @@ a{
 #footer  .footer h2{
     color: white;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: .1rem;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -588,6 +595,9 @@ a{
 }
 .main.white #footer .footer h2{
     color: rgb(29, 27, 27);
+}
+#footer .footer .brand h1{
+    font-size: 2.2rem;
 }
 #footer  .footer p{
     text-align: center;
@@ -610,8 +620,7 @@ a{
 }
 #footer  .footer .social-item a:hover{
     color: white;
-    text-transform: uppercase;
-    text-decoration: underline;
+    transform: scale(1.1);
     transition: .3s ease;
 }
 .main.white #footer .footer .social-item a:hover{
