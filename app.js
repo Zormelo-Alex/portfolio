@@ -7,8 +7,11 @@ const menuitems = document.querySelectorAll('.header .navbar .navlist ul li a');
 const header = document.querySelector('.header.container');
 const yinYang = document.querySelector(".yin-yang-container");
 
+// window.addEventListener("load", ()=>{
+//     yinYang.style.display = "none";
+// })
 //events
-setInterval(stop,2500);
+setTimeout(stop,2500);
 
 burger.addEventListener('click',()=>{
     burger.classList.toggle('active');
