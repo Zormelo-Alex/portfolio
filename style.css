@@ -834,7 +834,7 @@ a{
     #services .servicebottom .serviceitem p{
         color: rgba(255, 255, 255, 0.425);
     }
-    #services .servicebottom .serviceitem p:hover{
+    #services .servicebottom .serviceitem:hover p{
         color: whitesmoke;
     }
     #projects .projects .all-projects .project-item{
