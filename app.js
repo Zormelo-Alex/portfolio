@@ -6,12 +6,13 @@ const mobile_menu = document.querySelector('.header .navbar .navlist ul');
 const menuitems = document.querySelectorAll('.header .navbar .navlist ul li a');
 const header = document.querySelector('.header.container');
 const yinYang = document.querySelector(".yin-yang-container");
+const viewmore = document.querySelector(".more button");
 
 // window.addEventListener("load", ()=>{
 //     yinYang.style.display = "none";
 // })
 //events
-setTimeout(stop,2500);
+setTimeout(stop,200);
 
 burger.addEventListener('click',()=>{
     burger.classList.toggle('active');
@@ -23,6 +24,10 @@ menuitems.forEach((item)=>{
         mobile_menu.classList.toggle('active');
     });
 });
+
+viewmore.addEventListener("click", ()=>{
+    document.querySelector(".moreProjects").style.display = "flex";
+})
 
 light.addEventListener('click',white);
 

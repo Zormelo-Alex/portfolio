@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 *::-webkit-scrollbar{
     width: 0px;
@@ -184,6 +185,8 @@ a{
     border: 3px solid white;
     border-radius: 50%;
     position: relative;
+    right: 1rem;
+    top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,42 +362,52 @@ a{
     font-weight: 300;
     letter-spacing: 1px;
 }
+
 #services .servicebottom{
     display: flex;
     align-items:center ;
     justify-content: center;
     flex-wrap: wrap;
 }
+.main.white #services .servicebottom .serviceitem h2{
+    color: rgb(48, 48, 48);
+}
+.main.white #services .servicebottom .serviceitem p{
+    color: black;
+}
 #services .servicebottom .serviceitem p{
-    color: rgb(224, 216, 216);
+    color: rgb(255, 255, 255);
     margin-top: 1rem;
 }
 #services .serviceitem{
     flex-basis: 80%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(./images/5529648.jpg);
     background-size: cover;
     margin: 10px 5%;
     color: white;
     position: relative;
     z-index: 1;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 0px rgba(20, 20, 20, 0.445);
 }
-#services .serviceitem::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
+.main.white #services .serviceitem{
+    box-shadow: 0px 2px 5px 0px rgba(20, 20, 20, 0.336);
+}
+#services .serviceitem .icon{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+#services .serviceitem .icon img{
     width: 100%;
-    background-color: black;
-    opacity: .6;
-    z-index: -1;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 #projects .projects{
     flex-direction: column;
@@ -468,27 +481,154 @@ a{
     flex-basis: 50%;
     width: 100%;
     height: 300px;
+    min-height: 300px;
     overflow: hidden;
     position: relative;
     object-fit: cover;
+    background-image: url("./images/one.png");
+    background-size: cover;
+    background-position: top;
     border-radius: 0px 0px 10px 10px;
+    cursor: pointer;
+    transition: ease-in-out 6s;
 }
-#projects .project-img:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 300px;
-    width: 100%;
-    background-color: black;
-    opacity: .1;
-    border-radius: 0px 0px 10px 10px; 
+#projects .project-img.two{
+    background-image: url('./images/axlr8.png');
+}
+#projects .project-img.four{
+    background-image: url('./images/nyekaf.png');
+    transition: ease-in-out 2s;
+}
+#projects .project-img.five{
+    background-image: url('./images/surfacelab.png');
 }
 #projects .project-item .project-img:hover {
-    transform: scale(1.1);
-    transition: .3s ease;
+    background-position: bottom;
 }
-
+#projects .all-projects .more button{
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    background-color: crimson;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#projects .all-projects .more i{
+    margin-left: .5rem;
+}
+#projects .all-projects .moreProjects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    transition: all .3s ease;
+    display: none;
+}
+#projects .all-projects .moreProjects .moreProject{
+    width: 250px;
+    min-height: 322px;
+    background-color: rgb(29, 29, 29);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.main.white #projects .all-projects .moreProjects .moreProject{
+    background-color: rgb(235, 235, 235);
+}
+#projects .all-projects .moreProjects .moreProject:hover{
+    box-shadow: 2px 7px 10px 0px rgba(0, 0, 0, 0.486);
+}
+.main.white #projects .all-projects .moreProjects .moreProject:hover{
+    box-shadow: 2px 7px 10px 0px rgba(0, 0, 0, 0.103);
+}
+#projects .all-projects .moreProjects .moreProject .image{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+#projects .all-projects .moreProjects .moreProject .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#projects .all-projects .moreProjects .moreProject .image::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .0;
+}
+#projects .all-projects .moreProjects .moreProject .image .link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+#projects .all-projects .moreProjects .moreProject .image .link a{
+    text-decoration: none;
+    color: white;
+    padding: .7rem;
+    border-radius: 50%;
+    background-color: rgba(17, 17, 17, 0.527);
+    transition: all .3s ease;
+}
+#projects .all-projects .moreProjects .moreProject .image .link a:hover{
+    background-color: crimson;
+}
+#projects .all-projects .moreProjects .moreProject p{
+    background-color: rgb(29, 29, 29);
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    z-index: 5;
+    color: rgb(214, 214, 214);
+    position: relative;
+    top: -1rem;
+}
+.main.white #projects .all-projects .moreProjects .moreProject p{
+    color: rgb(17, 17, 17);
+    background-color: rgb(235, 235, 235);
+}
+#projects .all-projects .moreProjects .moreProject h3{
+    letter-spacing: 1px;
+    margin-bottom: .7rem;
+}
+#projects .all-projects .moreProjects .moreProject h5{
+    font-weight: normal;
+    color: rgb(214, 214, 214);
+    text-align: center;
+}
+.main.white #projects .all-projects .moreProjects .moreProject h5{
+    color: rgb(17, 17, 17);
+}
+#projects .all-projects .moreProjects .moreProject:hover .image .link{
+    visibility: visible;
+}
 #about .about{
     flex-direction: column-reverse;
     text-align: center;
@@ -581,6 +721,9 @@ a{
     box-shadow: 1px 2px 5px 0 rgb(17, 17, 17);
     flex-direction: column  ;
 }
+.main.white #contact .contact-item{
+    box-shadow: 0px 2px 5px 0px rgba(20, 20, 20, 0.336);
+}
 #contact .contact-item:hover{
     box-shadow: 0px 0px 5px 0 rgb(17, 17, 17);
     transition: .3s ease;
@@ -636,6 +779,10 @@ a{
     font-size: 16px;
     font-weight: 100;
 }
+.main.white #skills .stack .box h4{
+    font-weight: normal;
+    color: rgb(126, 119, 119);
+}
 #footer  .footer{
     background-image: linear-gradient(150deg, rgb(71, 69, 69),black);
     flex-direction: column ;
@@ -671,13 +818,17 @@ a{
 }
 #footer  .footer .social-item{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 #footer  .footer .social-item a{
-    color: crimson;
+    color: white;
+    background-color: crimson;
+    padding: .5rem 1rem;
+    border-radius: 3px;
     justify-content: space-around;
-    margin-left: 13%;
     font-size:1.3rem ;
-    width: 100%;
 }
 #footer  .footer .social-item a:hover{
     color: white;
@@ -741,7 +892,9 @@ a{
         margin-bottom: 0px;
     }
     #services .serviceitem .icon{
-        margin-bottom: 12px;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1rem;
     }
     #projects .projects{
         padding: 50px 0;
@@ -787,15 +940,21 @@ a{
     #header .burger{
         display: none;
     }
+    .main.white #header .navbar .navlist ul{
+        backdrop-filter: blur(8px);
+        background-color: rgba(255, 255, 255, 0.151);
+        box-shadow: none;
+    }
     #header .navbar .navlist ul{
         display: flex;
         flex-direction: row;
         left: 0;
         top: 0;
-        height: 49px;
+        height: 59px;
         box-shadow: none;
-        border-radius: 0px 0px 0px 25px;
-        background-color: rgba(26, 24, 24, 0.801);
+        border-radius: 0px 0px 0px 0px;
+        background-color: rgba(73, 72, 72, 0.11);
+        backdrop-filter: blur(8px);
         width: 100%;
     }
     #header .header .navlist ul a{
@@ -809,6 +968,8 @@ a{
         top: 0;
         right: 0;
         left: 0;
+        box-shadow: none;
+        border-radius: 0px 0px 0px 0px;
     }
     #header .header .navlist ul a:hover{
         color: crimson;
@@ -829,7 +990,7 @@ a{
         height: 100%;
         padding: 10px;
         margin: 10px 20px;
-        box-shadow: 1px 1px 4px 0px black;
+        box-shadow: 2px 2px 15px 0px rgba(20, 20, 20, 0.445);
     }
     #services .servicebottom .serviceitem p{
         color: rgba(255, 255, 255, 0.425);
@@ -850,6 +1011,7 @@ a{
     }
     #projects .project-img{
         border-radius: 0px 10px 10px 0px;
+        min-height: initial;
     }
     #projects .project-img::after{
         border-radius: 0px 10px 10px 0px;
@@ -865,7 +1027,7 @@ a{
     #skills .stack .box{
         margin: 20px;
     }
-    #footer .social-icon .social-item a{
-        margin-left: 20%;
+    #footer .social-icon .social-item{
+    padding: 0px 5rem;
     }
 }
