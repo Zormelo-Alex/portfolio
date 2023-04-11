@@ -494,14 +494,14 @@ a{
     transition: ease-in-out 6s;
 }
 #projects .project-img.two{
-    background-image: url('./images/axlr8.png');
+    background-image: url('./images/axlr8.jpeg');
 }
 #projects .project-img.four{
-    background-image: url('./images/nyekaf.png');
+    background-image: url('./images/nyekaf.jpeg');
     transition: ease-in-out 2s;
 }
 #projects .project-img.five{
-    background-image: url('./images/surfacelab.png');
+    background-image: url('./images/surfacelab.jpeg');
 }
 #projects .project-item .project-img:hover {
     background-position: bottom;
