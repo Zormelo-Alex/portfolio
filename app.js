@@ -12,7 +12,7 @@ const viewmore = document.querySelector(".more button");
 //     yinYang.style.display = "none";
 // })
 //events
-setTimeout(stop,200);
+setTimeout(stop,2500);
 
 burger.addEventListener('click',()=>{
     burger.classList.toggle('active');
