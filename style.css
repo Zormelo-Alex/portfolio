@@ -394,6 +394,7 @@ a{
     position: relative;
     z-index: 1;
     border-radius: 5px;
+    background-color: rgb(29, 29, 29);
     box-shadow: 2px 2px 15px 0px rgba(20, 20, 20, 0.445);
 }
 .main.white #services .serviceitem{
@@ -669,7 +670,11 @@ a{
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid whitesmoke;
+    border: 7px solid whitesmoke;
+}
+#about .col-left .about-img img{
+        object-fit: cover;
+        object-position: left;
 }
 .main.white #about .col-left .about-img{
     border: 10px solid rgb(29, 27, 27);
@@ -889,7 +894,7 @@ a{
         height: 320px;
     }
     #services .serviceitem h2{
-        font-size: 40px;
+        font-size: 1.5em;
         margin-bottom: 0px;
     }
     #services .serviceitem .icon{
