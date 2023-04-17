@@ -396,9 +396,12 @@ a{
     border-radius: 5px;
     background-color: rgb(29, 29, 29);
     box-shadow: 2px 2px 15px 0px rgba(20, 20, 20, 0.445);
+    cursor: default;
 }
 .main.white #services .serviceitem{
     box-shadow: 0px 2px 5px 0px rgba(20, 20, 20, 0.336);
+    color: rgb(17, 17, 17);
+    background-color: rgb(241, 239, 239);
 }
 #services .serviceitem .icon{
     width: 100px;
@@ -494,6 +497,15 @@ a{
     cursor: pointer;
     transition: ease-in-out 6s;
 }
+#projects .project-img.one, #projects .project-img.three{
+    overflow: hidden;
+}
+#projects .project-img.one img, #projects .project-img.three img{
+    transition: .5s ease;
+}
+#projects .project-img.one img:hover, #projects .project-img.three img:hover{
+    transform: scale(1.1);
+}
 #projects .project-img.two{
     background-image: url('./images/axlr8.jpeg');
 }
@@ -540,6 +552,16 @@ a{
     border-radius: 5px;
     transition: all .3s ease;
     cursor: pointer;
+}
+#projects .all-projects .moreProjects .moreProject a{
+    text-transform: capitalize;
+    color: crimson;
+    transition: .3s ease;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+#projects .all-projects .moreProjects .moreProject a:hover{
+    color: rgb(245, 62, 99);
 }
 .main.white #projects .all-projects .moreProjects .moreProject{
     background-color: rgb(235, 235, 235);
