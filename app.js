@@ -26,7 +26,13 @@ menuitems.forEach((item)=>{
 });
 
 viewmore.addEventListener("click", ()=>{
-    document.querySelector(".moreProjects").style.display = "flex";
+    document.querySelector(".moreProjects").classList.toggle("view");
+    if(viewmore.innerText == "View More "){
+        viewmore.innerHTML = `View Less <i class="fa-sharp fa-solid fa-caret-up"></i>`
+    }else{
+        viewmore.innerHTML = `View More <i class="fa-solid fa-caret-down"></i>`
+    }
+    
 })
 
 light.addEventListener('click',white);
