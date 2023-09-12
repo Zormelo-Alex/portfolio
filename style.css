@@ -753,8 +753,6 @@ a{
 #contact .contact-items{
   width: 100%; 
   margin: 0 auto; 
-  display: flex;
-  justify-content: center;
 }
 #contact .contact-items .gmail{
     text-decoration: none;
@@ -1073,6 +1071,10 @@ a{
     }
     #projects .project-img::after{
         border-radius: 0px 10px 10px 0px;
+    }
+    #contact .contact-items{
+        display: flex;
+        justify-content: center;
     }
     #contact .contact-item{
         justify-content: space-around;
