@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,18 @@
     <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>DOM</title>
 </head>
+
 <body>
     <div class="yin-yang-container">
         <div class="yin-yang"></div>
@@ -30,11 +36,11 @@
                             <div class="bar3"></div>
                         </div>
                         <ul>
-                            <li><a href="#hero">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li style="--i:5" data-icon="&#xf015"><a href="#hero">Home</a></li>
+                            <li style="--i:4" data-icon="&#xf2bb"><a href="#services">Services</a></li>
+                            <li style="--i:3" data-icon="&#xf03a"><a href="#projects">Projects</a></li>
+                            <li style="--i:2" data-icon="&#xf07c"><a href="#about">About</a></li>
+                            <li style="--i:1" data-icon="&#xe533"><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -50,7 +56,7 @@
                 </div>
             </div>
         </section>
-    
+
         <section id="services">
             <div class="services container">
                 <div class="servicetop">
@@ -59,52 +65,58 @@
                         <br>
                         Below are a few...
                     </p>
-                
+
                 </div>
                 <div class="servicebottom">
                     <div class="serviceitem" data-aos="fade-up" data-aos-delay="200" data-tilt>
                         <div class="icon"><img src="./images/design.png" alt="">
                         </div>
                         <h2>UI/UX Design</h2>
-                        <p>I'm a UI/UX designer, i design interfaces for web, mobile and desktop applications. Mostly with the use of either Figma or Adobe XD, sometimes both.</p>
-    
+                        <p>I'm a UI/UX designer, i design interfaces for web, mobile and desktop applications. Mostly
+                            with the use of either Figma or Adobe XD, sometimes both.</p>
+
                     </div>
                     <div class="serviceitem" data-aos="fade-up" data-aos-delay="200" data-tilt>
                         <div class="icon"><img src="./images/webdev.png" alt="">
                         </div>
                         <h2>Web Development</h2>
                         <p>
-                            I develop websites, both front-end and back-end, using Html, Css, Javascript, Node Js, PHP and so much more. I'm also well versed in developing with frameworks such as React js.
+                            I develop websites, both front-end and back-end, using Html, Css, Javascript, Node Js, PHP
+                            and so much more. I'm also well versed in developing with frameworks such as React js.
                         </p>
-                        
+
                     </div>
                     <div class="serviceitem" data-aos="fade-up" data-aos-delay="200" data-tilt>
                         <div class="icon"><img src="./images/6470993.png" alt="">
                         </div>
                         <h2>App Development</h2>
                         <p>
-                            Hello, i develop mobile apps for both android and IOS using Flutter. I'm somewhat comfortable with building apps with java(android studio) as well.
+                            Hello, i develop mobile apps for both android and IOS using Flutter. I'm somewhat
+                            comfortable with building apps with java(android studio) as well.
                         </p>
-                        
+
                     </div>
                 </div>
             </div>
         </section>
-    
+
         <section id="projects">
             <div class="projects container">
                 <div class="projects-header">
                     <h1 class="sectiontitle">Recent <span style="color: crimson;">Projects</span></h1>
-    
+
                 </div>
                 <div class="all-projects">
                     <div class="project-item" data-aos="fade-up" data-aos-delay="100">
                         <div class="project-info" data-aos="fade-left" data-aos-delay="300">
                             <h1>Web-Dev</h1>
                             <h2>Managegement System</h2>
-                            <p>Developed a clinic managegement system for my schools local clinic as a project work for a course.</p>
+                            <p>Developed a clinic managegement system for my schools local clinic as a project work for
+                                a course.</p>
                             <div class="linkz">
-                                <a class="github" target="_blank" href="https://github.com/Zormelo-Alex/Clinic_management_system-project"><i class="fa-brands fa-github"></i></a>
+                                <a class="github" target="_blank"
+                                    href="https://github.com/Zormelo-Alex/Clinic_management_system-project"><i
+                                        class="fa-brands fa-github"></i></a>
                                 <a target="_blank" href="./images/cms.png"><i class="fa-solid fa-image"></i></a>
                             </div>
                         </div>
@@ -118,8 +130,11 @@
                             <h2>A Static website</h2>
                             <p>Designed and developed a website for the Axlr8 developer club in HTU</p>
                             <div class="linkz">
-                                <a class="github" target="_blank" href="https://github.com/Zormelo-Alex/axlr8-website"><i class="fa-brands fa-github"></i></a>
-                                <a target="_blank" href="https://axlr8-sable.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a class="github" target="_blank"
+                                    href="https://github.com/Zormelo-Alex/axlr8-website"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a target="_blank" href="https://axlr8-sable.vercel.app/"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 <a target="_blank" href="./images/axlr8.jpeg"><i class="fa-solid fa-image"></i></a>
                             </div>
                         </div>
@@ -134,7 +149,8 @@
                                 A personal website user interface design I worked on sometime back
                             </p>
                             <div class="linkz">
-                                <a target="_blank" href="./images/Web 1920 – 1.jpg"><i class="fa-solid fa-image"></i></a>
+                                <a target="_blank" href="./images/Web 1920 – 1.jpg"><i
+                                        class="fa-solid fa-image"></i></a>
                             </div>
                         </div>
                         <div class="project-img three">
@@ -147,8 +163,10 @@
                             <h2>An E-commerce website</h2>
                             <p>Designed this e-commerce web app for a client.</p>
                             <div class="linkz">
-                                <a class="github" target="_blank" href="https://github.com/Zormelo-Alex/Nyekaf"><i class="fa-brands fa-github"></i></a>
-                                <a target="_blank"  href="https://nyekaf.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a class="github" target="_blank" href="https://github.com/Zormelo-Alex/Nyekaf"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a target="_blank" href="https://nyekaf.vercel.app/"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 <a target="_blank" href="./images/nyekaf.jpeg"><i class="fa-solid fa-image"></i></a>
                             </div>
                         </div>
@@ -160,11 +178,14 @@
                             <h1>Web Development</h1>
                             <h2>A static Website</h2>
                             <p>
-                                Developed a website for a service oriented company to manage their affairs and market their services 
+                                Developed a website for a service oriented company to manage their affairs and market
+                                their services
                             </p>
                             <div class="linkz">
-                                <a target="_blank"  href="https://surfacelab.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                <a target="_blank" href="./images/surfacelab.jpeg""><i class="fa-solid fa-image"></i></a>
+                                <a target="_blank" href="https://surfacelab.vercel.app/"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a target="_blank" href="./images/surfacelab.jpeg""><i class=" fa-solid
+                                    fa-image"></i></a>
                             </div>
                         </div>
                         <div class="project-img five">
@@ -178,47 +199,62 @@
                             <div class="image">
                                 <img src="./images/Dictionary.jpeg" alt="">
                                 <div class="link">
-                                    <a target="_blank"  href="https://dictionary-six-phi.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    <a class="github" target="_blank" href="https://github.com/Zormelo-Alex/dictionary_api_app"><i class="fa-brands fa-github"></i></a>
+                                    <a target="_blank" href="https://dictionary-six-phi.vercel.app/"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a class="github" target="_blank"
+                                        href="https://github.com/Zormelo-Alex/dictionary_api_app"><i
+                                            class="fa-brands fa-github"></i></a>
                                 </div>
                             </div>
                             <p>Js</p>
                             <h3>Dictionary App</h3>
-                            <h5>Developed a dictionary web application that allows you to search words and their meanings with specific pronounciation.</h5>
+                            <h5>Developed a dictionary web application that allows you to search words and their
+                                meanings with specific pronounciation.</h5>
                             <a target="_blank" href="https://dictionary-six-phi.vercel.app/">view</a>
                         </div>
                         <div class="moreProject">
                             <div class="image">
                                 <img src="./images/food.jpeg" alt="">
                                 <div class="link">
-                                    <a target="_blank"  href="https://recipe-app-ten-jet.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    <a class="github" target="_blank" href="https://github.com/Zormelo-Alex/recipeApp"><i class="fa-brands fa-github"></i></a>
+                                    <a target="_blank" href="https://recipe-app-ten-jet.vercel.app/"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a class="github" target="_blank"
+                                        href="https://github.com/Zormelo-Alex/recipeApp"><i
+                                            class="fa-brands fa-github"></i></a>
                                 </div>
                             </div>
                             <p>React</p>
                             <h3>Recipe App</h3>
-                            <h5>Developed a recipe web application that allows you to browse food options and their meanings with specific pronounciation.</h5>
+                            <h5>Developed a recipe web application that allows you to browse food options and their
+                                meanings with specific pronounciation.</h5>
                             <a target="_blank" href="https://recipe-app-ten-jet.vercel.app/">view</a>
                         </div>
                         <div class="moreProject">
                             <div class="image">
                                 <img src="./images/country.jpeg" alt="">
                                 <div class="link">
-                                    <a target="_blank"  href="https://country-details-xi.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    <a class="github" target="_blank" href="https://github.com/Zormelo-Alex/countryDetailsWebApp"><i class="fa-brands fa-github"></i></a>
+                                    <a target="_blank" href="https://country-details-xi.vercel.app/"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a class="github" target="_blank"
+                                        href="https://github.com/Zormelo-Alex/countryDetailsWebApp"><i
+                                            class="fa-brands fa-github"></i></a>
                                 </div>
                             </div>
                             <p>Js</p>
                             <h3>Country info</h3>
-                            <h5>Developed a web application that allows you to search countries and get various information about them.</h5>
+                            <h5>Developed a web application that allows you to search countries and get various
+                                information about them.</h5>
                             <a target="_blank" href="https://country-details-xi.vercel.app/">view</a>
                         </div>
                         <div class="moreProject">
                             <div class="image">
                                 <img src="./images/jokes.jpeg" alt="">
                                 <div class="link">
-                                    <a target="_blank"  href="https://joke-gen-api.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    <a class="github" target="_blank" href="https://github.com/Zormelo-Alex/JokeGenAPI"><i class="fa-brands fa-github"></i></a>
+                                    <a target="_blank" href="https://joke-gen-api.vercel.app/"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a class="github" target="_blank"
+                                        href="https://github.com/Zormelo-Alex/JokeGenAPI"><i
+                                            class="fa-brands fa-github"></i></a>
                                 </div>
                             </div>
                             <p>Js</p>
@@ -230,8 +266,11 @@
                             <div class="image">
                                 <img src="./images/quotes.jpeg" alt="">
                                 <div class="link">
-                                    <a target="_blank"  href="https://random-qoutes.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    <a class="github" target="_blank" href="https://github.com/Zormelo-Alex/qoutesGen-app"><i class="fa-brands fa-github"></i></a>
+                                    <a target="_blank" href="https://random-qoutes.vercel.app/"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a class="github" target="_blank"
+                                        href="https://github.com/Zormelo-Alex/qoutesGen-app"><i
+                                            class="fa-brands fa-github"></i></a>
                                 </div>
                             </div>
                             <p>Js</p>
@@ -243,20 +282,24 @@
                             <div class="image">
                                 <img src="./images/pokemon.jpeg" alt="">
                                 <div class="link">
-                                    <a target="_blank"  href="https://pokemon-gen-app.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    <a class="github" target="_blank" href="https://github.com/Zormelo-Alex/pokemonAPI_app"><i class="fa-brands fa-github"></i></a>
+                                    <a target="_blank" href="https://pokemon-gen-app.vercel.app/"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a class="github" target="_blank"
+                                        href="https://github.com/Zormelo-Alex/pokemonAPI_app"><i
+                                            class="fa-brands fa-github"></i></a>
                                 </div>
                             </div>
                             <p>Js</p>
                             <h3>Pokemon</h3>
-                            <h5>Developed a web application that displays random pokemon cards on the click of a button.</h5>
+                            <h5>Developed a web application that displays random pokemon cards on the click of a button.
+                            </h5>
                             <a target="_blank" href="https://pokemon-gen-app.vercel.app/">view</a>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    
+
         <section id="about">
             <div class="about container">
                 <div class="col-left">
@@ -268,18 +311,26 @@
                     <h1 class="sectiontitle">About <span style="color: crimson;">me</span> </h1>
                     <h2>A Dedicated Developer</h2>
                     <p data-aos="fade-in" data-aos-delay="200">
-                        As a curious Junior Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and more. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications. <br>
+                        As a curious Junior Developer, I possess an impressive arsenal of skills in HTML, CSS,
+                        JavaScript, React, Tailwind, and more. I excel in designing and maintaining responsive websites
+                        that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces
+                        through writing clean and optimized code and utilizing cutting-edge development tools and
+                        techniques. I am also a team player who thrives in collaborating with cross-functional teams to
+                        produce outstanding web applications. <br>
                         When I'm not coding, I'm definitely sleeping or watching something.
                     </p>
                     <a class="cta" target="_blank" href="https://github.com/Zormelo-Alex">GitHub</a><br>
-                    <a class="cta" href="./docs/Resume.pdf" data-aos="fade-down" data-aos-delay="200">Download Resume</a>
+                    <a class="cta" href="./docs/Resume.pdf" data-aos="fade-down" data-aos-delay="200">Download
+                        Resume</a>
                 </div>
             </div>
         </section>
-    
+
         <section id="contact">
             <div class="contact">
-                <div><h1 class="sectiontitle">Contact <span style="color: crimson;">Info</span></h1></div>
+                <div>
+                    <h1 class="sectiontitle">Contact <span style="color: crimson;">Me</span></h1>
+                </div>
             </div>
             <div class="contact-items">
                 <div class="contact-item" data-aos="fade-down" data-aos-delay="200" data-tilt>
@@ -311,12 +362,24 @@
                     </div>
                 </div>
             </div>
-    
+            <div class="contact-me">
+                <div class="message">
+                    <h2 class="sm btn"><span>Send Me A Message📧</span> <i class="fa-solid fa-caret-down"></i></h2>
+                    <div class="ins">
+                        <input type="text" placeholder="Name" class="in name">
+                        <input type="text" placeholder="Email" class="in email">
+                        <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                        <button>Send</button>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="skills">
             <div class="skills pt">
-                <div><h1 class="sectiontitle">Tech-<span style="color: crimson;">Stack</span></h1></div>
+                <div>
+                    <h1 class="sectiontitle">Tech-<span style="color: crimson;">Stack</span></h1>
+                </div>
             </div>
             <div class="stack pt">
                 <div class="box" data-aos="fade-in" data-aos-delay="300">
@@ -368,16 +431,19 @@
                     <h4>MySQL</h4>
                 </div>
             </div>
-    
+
         </section>
-    
+
         <section id="footer">
             <div class="footer">
-                <div class="brand"><h1><span style="color: crimson;">Z</span>ormelo <span style="color: crimson;">A</span>lex</h1></div>
+                <div class="brand">
+                    <h1><span style="color: crimson;">Z</span>ormelo <span style="color: crimson;">A</span>lex</h1>
+                </div>
                 <h2>You Think It, I Develop It</h2>
                 <div class="social-icon">
                     <div class="social-item">
-                        <a href="https://www.linkedin.com/in/alex-zormelo-ab5942213/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/alex-zormelo-ab5942213/"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://twitter.com/DodziZormelo"><i class="fa-brands fa-twitter"></i></a>
                     </div>
@@ -386,8 +452,9 @@
             </div>
         </section>
     </div>
-    
-<script src="./vanilla-tilt.js"></script>
-<script src="./app.js"></script>
+
+    <script src="./vanilla-tilt.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
