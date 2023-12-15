@@ -37,7 +37,10 @@ viewmore.addEventListener("click", ()=>{
     
 })
 
-sendMailBtn.addEventListener("click", sendMail)
+sendMailBtn.addEventListener("click", (e)=>{
+    e.preventDefault()
+    sendMail()
+})
 
 message.addEventListener("click", ()=>{
     document.querySelector(".message .ins").classList.toggle("view");
@@ -70,9 +73,17 @@ function sendMail(){
     name = name.value.trim()
     email = email.value.trim()
     messageText = messageText.value.trim()
+    let subject = "Portfolio Message"
     if(!name || !email || !messageText) return alert("Please fill in all fields")
 
-    console.log({name})
+    const emailBody = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${messageText}`;
+
+    const emailLink = `mailto:alexzormelo9@gmail.com?subject=${encodeURIComponent(
+        subject
+    )}&body=${encodeURIComponent(emailBody)}`
+    window.location.href = emailLink
+
+    // console.log({name})
 };
 
 AOS.init({
