@@ -8,7 +8,6 @@ const header = document.querySelector('.header.container');
 const yinYang = document.querySelector(".yin-yang-container");
 const viewmore = document.querySelector(".more button");
 const message = document.querySelector(".message .btn");
-const sendMailBtn = document.querySelector(".message .ins button")
 
 // window.addEventListener("load", ()=>{
 //     yinYang.style.display = "none";
@@ -37,17 +36,13 @@ viewmore.addEventListener("click", ()=>{
     
 })
 
-sendMailBtn.addEventListener("click", (e)=>{
-    e.preventDefault()
-    sendMail()
-})
 
 message.addEventListener("click", ()=>{
     document.querySelector(".message .ins").classList.toggle("view");
     if(document.querySelector(".message .ins").classList.contains("view")){
-        message.innerHTML = `<span>Send Me A Message📧</span> <i class="fa-sharp fa-solid fa-caret-up"></i>`
+        message.innerHTML = `<span>Send Me A Message</span> <i class="fa-sharp fa-solid fa-caret-up"></i>`
     }else{
-        message.innerHTML = `<span>Send Me A Message📧</span> <i class="fa-solid fa-caret-down"></i>`
+        message.innerHTML = `<span>Send Me A Message</span> <i class="fa-solid fa-caret-down"></i>`
     }
     
 })
@@ -64,27 +59,6 @@ function stop(){
     yinYang.style.display = "none";
 };
 
-function sendMail(){
-    let name = document.querySelector(".message .ins .name")
-    let email = document.querySelector(".message .ins .email")
-    let messageText = document.querySelector(".message .ins textarea")
-
-
-    name = name.value.trim()
-    email = email.value.trim()
-    messageText = messageText.value.trim()
-    let subject = "Portfolio Message"
-    if(!name || !email || !messageText) return alert("Please fill in all fields")
-
-    const emailBody = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${messageText}`;
-
-    const emailLink = `mailto:alexzormelo9@gmail.com?subject=${encodeURIComponent(
-        subject
-    )}&body=${encodeURIComponent(emailBody)}`
-    window.location.href = emailLink
-
-    // console.log({name})
-};
 
 AOS.init({
     easing: 'ease',

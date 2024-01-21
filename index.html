@@ -364,13 +364,25 @@
             </div>
             <div class="contact-me">
                 <div class="message">
-                    <h2 class="sm btn"><span>Send Me A Message📧</span> <i class="fa-solid fa-caret-down"></i></h2>
-                    <div class="ins">
-                        <input type="text" placeholder="Name..." class="in name">
-                        <input type="text" placeholder="Email..." class="in email">
-                        <textarea placeholder="Message..." name="" id="" cols="30" rows="10"></textarea>
-                        <button>Send</button>
-                    </div>
+                    <h2 class="sm btn"><span>Send Me A Message</span> <i class="fa-solid fa-caret-down"></i></h2>
+                        <form class="ins" action="https://formsubmit.co/alexzormelo9@gmail.com" method="POST">
+                            <div class="input-group">
+                                <input type="text" name="name" required  class="in name">
+                                <label for="">Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" name="email" required  class="in email">
+                                <label for="">Email</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <label for="">Message</label>
+                            </div>
+                            <input type="hidden" name="_next" value="https://dodz-i.vercel.app/">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_autoresponse" value="Thank you for contacting me, will get back to you as soon as possible">
+                            <button type="submit">Send</button>
+                       </form>
                 </div>
             </div>
         </section>

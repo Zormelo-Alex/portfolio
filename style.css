@@ -791,6 +791,9 @@ a{
     animation: 1s linear fadein;
 }
 #contact .contact-me .message .ins.view{
+    box-shadow: 2px 5px 15px 0px rgba(0, 0, 0, 0.397);
+    border-radius: 7px;
+    padding: 3rem 4rem;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -798,26 +801,43 @@ a{
     max-width: 700px;
     animation: 1s linear fadein;
 }
+#contact .contact-me .message form div{
+    width: 100%;
+}
+#contact .contact-me .message form .input-group{
+    position: relative;
+}
+#contact .contact-me .message form label{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    font-size: 16px;
+    padding: 0px 10px;
+    transition: .3s ease;
+    pointer-events: none;
+}
 #contact .contact-me .message .in{
     padding: 10px 7px;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.719);
     width: 100%;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: transparent;
-    border-bottom: 1px solid white;
     color: white;
+    font-size: 18px;
+    font-weight: 300;
 }
 #contact .contact-me .message textarea{
     padding: 10px 7px;
-    border: none;
     border-radius: 3px;
     max-height: 70px;
     min-height: 70px;
     min-width: 100%;
     max-width: 700px;
     background-color: transparent;
-    border-bottom: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.719);
     color: white;
+    font-size: 18px;
+    font-weight: 300;
 }
 #contact .contact-me .message button{
     margin-top: 1rem;
@@ -835,6 +855,11 @@ a{
 #contact .contact-me .message .in:focus, #contact .contact-me .message textarea:focus{
     color: rgb(247, 243, 243);
     outline: none;
+}
+#contact .contact-me .message .in:focus + label,#contact .contact-me .message .in:valid + label, #contact .contact-me .message textarea:focus + label, #contact .contact-me .message textarea:valid + label{
+    top: -10px;
+    background-color: rgb(241, 128, 150);
+    border-radius: 5px;
 }
 #contact .contact{
     flex-direction: column;
